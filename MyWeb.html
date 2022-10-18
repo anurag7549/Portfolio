@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(img/bg_image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 1254px; */
+    color: white;
+    font-family: 'Playball', cursive;
+}
+
+.header {}
+
+.left {
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: absolute;
+    left: -18px;
+    top: 0px;
+}
+
+.left img {
+    width: 226px;
+    position: absolute;
+    top: -52px;
+}
+
+.left img:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.mid {
+    /* background-color: #8b82827a; */
+    /* border: 2px solid green; */
+    display: block;
+    width: 35%;
+    margin: 44px auto;
+    text-align: center;
+}
+
+.right {
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 44px;
+    font-size: 29px;
+}
+
+.navbar li {
+    display: inline-block;
+    /* background-color: gray; */
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 14px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.navbar li a:hover {
+    color: rgb(129, 122, 122);
+    /* background-color: white; */
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 2px solid black;
+    margin: 0px 7px;
+    border-radius: 13px;
+    padding: 10px 21px;
+    font-weight: bold;
+    font-family: 'Playball', cursive;
+    width: 107px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: rgb(253, 248, 248);
+    background-color: black;
+}
+
+.section1 {
+    border: 2px solid black;
+    margin: 87px 80px;
+    padding: 50px;
+    width: 42%;
+    border-radius: 28px;
+    background-color: #fffafa59;
+    color: black;
+}
+
+.formgroup input {
+    text-align: center;
+    display: block;
+    width: 395px;
+    padding: 6px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 19px;
+    border-radius: 9px;
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+}
+
+.section1 h1,
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.section1 button {
+    display: block;
+    width: 395px;
+    margin: 20px auto;
+    background-color: black;
+    color: white;
+}
+
+.section1 button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+}
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/DD logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Your Calander</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Login</button>
+            <button class="btn">Sign up</button>
+        </div>
+    </header>
+    <div class="container">
+        <section class="section1">
+            <h1>Here You Can Write Your Daily Activities</h1>
+            <p>Register Here</p>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    <input type="text" placeholder="Enter your Name" required>
+                    <input type="text" placeholder="Enter your Phone no.">
+                    <input type="email" placeholder="Enter your Email" required>
+                    <input type="password" placeholder="Enter your Password" required>
+                </div>
+                <button class="btn">Register</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
