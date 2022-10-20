@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h2>HTML FORM</h2>
+    <form action="backend.php"></form>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="myName" placeholder="Enter Your Name" id="name">
+    </div>
+    <br>
+    <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="myEmail" id="email">
+    </div>
+    <br>
+    <div>
+        <label for="collegename">College name</label>
+        <input type="text" name="myCollegename" id="collegename">
+    </div>
+    <br>
+    <div>
+        <label for="branch">Branch</label><br>
+        Cse: <input type="radio" name="myBranch" id="branch"><br>
+        Mechaical: <input type="radio" name="myBranch" id="branch"><br>
+        Electrical: <input type="radio" name="myBranch" id="branch"><br>
+        Information technology: <input type="radio" name="myBranch" id="branch"><br>
+        Automobile: <input type="radio" name="myBranch" id="branch"><br>
+    </div>
+    <br>
+    <div>
+        <label for="cgpa">CGPA</label>
+        <input type="number" name="myCgpa" id="cgpa">
+    </div>
+    <br>
+    <div>
+        <label for="date">DOB</label>
+        <input type="date" name="myDob" id="date">
+    </div>
+    <br>
+    <div>
+        <label for="eligibility">Are you eligible</label>
+        <input type="checkbox" name="myeligibility" id="eligibility" checked>
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender</label>
+        <select name="myGender" id="gender">
+            <option value="female" selected>Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="myself">Write about yourself</label><br>
+        <textarea name="myText" id="myself" cols="60" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+</body>
+
+</html>
